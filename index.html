@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My little editor: a simple HTML previewer"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <title>Text Editor App</title>
+    
+</head>
+
+<header>
+    <h1>Text Editor App</h1>
+</header>  <hr>
+
+<body>
+<main>
+<div class="container">
+
+
+
+
+<div class="toolbar-wrapper" id="tool-bar">
+    <ul class="toolbar">
+        <li><button id="bold" class="tool"><b>&nbsp;B&nbsp;</b></button></li>
+        <li><button id="ital" class="tool"><em>&nbsp;i&nbsp;</em></button></li>
+        <li><button id="under" class="tool"><u>&nbsp;U&nbsp;</u></button></li>
+        <li><button id="hili" class="tool"><mark>&nbsp;h&nbsp;</mark></button></li>
+        <li><button id="strike" class="tool"><s>&nbsp;s&nbsp;</s></button></li>       
+    </ul>
+</div>
+
+<div class="form-item">
+<div class="editor-wrapper">
+   
+    <label class="text-options">
+        <span class="text-label">
+            <i id="" class="fa fa-pencil" aria-hidden="true"></i>
+            Editor
+        </span>
+        
+
+        <div>
+    </div>
+    </label> 
+  
+    
+    <textarea type="text"
+            name="submitted-post"
+            id="submittedPost"
+            placeholder="Write something here..."
+            rows="20"
+            cols="40"
+            maxlength="1500"
+            autofocus="true"
+            required="required"
+            ></textarea>
+            
+</div>
+    
+<div class="preview-wrapper">
+    <!-- <span class="description">Preview</span> -->
+    <label>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+
+        Preview</label>
+    <div id="preview">
+    <p id="preview-item" class="preview-inner"></p>
+    </div>
+</div>
+
+
+</div>
+
+
+
+</div>
+</main>
+<script src="script.js"></script>
+</body>
